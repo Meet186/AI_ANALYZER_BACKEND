@@ -65,6 +65,7 @@ if (!env.isprod) {
 // Routes
 app.use("/api/health", healthRouter);
 app.use("/api/auth", authRouter);
+app.use("/auth", authRouter);
 app.use("/api/resumes",resumesRouter);
 app.use("/api/dashboard",dashboardRouter);
 app.use("/api/insights",insightsRouter);
